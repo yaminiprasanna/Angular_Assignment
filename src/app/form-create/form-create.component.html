@@ -1,0 +1,33 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title>Create Task</mat-card-title>
+    
+    <form class="create-task-form" #form="ngForm" (ngSubmit)="onSubmit(form.value)" autocomplete="off">
+      <mat-form-field class="full-width">
+        <input matInput placeholder=" Add task name" name="task" ngModel>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Add description" name="description" ngModel>
+      </mat-form-field>
+
+    
+      <div class="row-input">
+        <mat-radio-group name="status" ngModel>
+          <mat-radio-button [value]="statuses[0]">
+            {{ statuses[0] }}
+          </mat-radio-button>
+          <mat-radio-button [value]="statuses[1]">
+            {{ statuses[1] }}
+          </mat-radio-button>
+        </mat-radio-group>       
+      </div>
+      
+      <div class="row-buttons">
+        <span class="spacer"></span>
+        <a routerLink="/tasks" class="form-btn" mat-button>Go Back</a>
+        <button type="submit" class="form-btn" mat-raised-button color="accent">Create</button>
+      </div>
+    </form>    
+  </mat-card>
+</div>

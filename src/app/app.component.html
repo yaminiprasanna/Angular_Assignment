@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" style="cursor: pointer;color: white" routerLink="/">Todo Application</a>
+    <a class="nav-item nav-link" id="float-right"style="cursor: pointer; position: absolute;
+            top: 1px;color:white;right: 5px;" (click)="logout()"> <i class="material-icons">logout</i> </a>
+   </div> 
+
+  <span class="fill-remaining-space"></span>  
+</mat-toolbar>
+
+
+
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" style="cursor: pointer" routerLink="/">Home</a>
+        <a class="nav-item nav-link" id="float-right"style="cursor: pointer; position: absolute;
+                top: 1px;color:white;right: 5px;" (click)="logout()"> <i class="material-icons">logout</i> </a>
+    </div>
+  </nav> -->
+  
+  <!-- main content container -->
+  <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+<!-- <router-outlet></router-outlet> -->
+<!-- more components -->

@@ -1,0 +1,13 @@
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.headers{
+  text-color:white
+}
+
+#floatright {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+}
